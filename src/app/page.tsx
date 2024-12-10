@@ -9,7 +9,8 @@ import Link from "next/link";
 import SkillChart from "@/components/ui/skill-chart";
 import { TrendingUp } from "lucide-react";
 import PlayPicpazzPopup from "@/components/ui/picpazz-popup";
-import { useState } from "react";
+import { buttonVariants } from "@/components/ui/button"
+
 
 export default function Home() {
   return (
@@ -21,7 +22,8 @@ export default function Home() {
         </h3>
         <h6 className="text-2xl md:text-4xl font-light">Want to build something great?</h6>
         <div>
-          <Button size={"lg"} className="rounded-full text-xl p-6">Let's Chat!</Button>
+          <Link href={"https://wa.me/254712478082?text=Hi%20Let's%20build%20something%20great!"} target="_blank" 
+              className={`${buttonVariants({ variant: "default", size:"lg", className:"rounded-full text-xl p-6" })}`}>Let's Chat!</Link>
           <PlayPicpazzPopup />
         </div>
       </div>
@@ -39,7 +41,7 @@ export default function Home() {
                 Play Youtube Videos <br /> Ad's Free With.
               </h3>
               <h2 className="text-3xl">
-                <Link href="https://e-juckbox.web.app/playlist/r2az6bxRtyyQWM9dROHv">Jukebox Playlist</Link>
+                <Link href="https://e-juckbox.web.app/playlist/r2az6bxRtyyQWM9dROHv" target="_blank">Jukebox Playlist</Link>
               </h2>
             </CardContent>
           </Card>
@@ -54,10 +56,10 @@ export default function Home() {
             <CardContent className="flex flex-col h-3/5 justify-center p-4 bg-slate-300 bg-opacity-20">
               <h3 className="text-xl bg-violet-980">
                 Relax Your Mind <br />
-                Play With.
+                And Play With.
               </h3>
               <h2 className="text-3xl">
-                <Link href="https://picpazz.com">Picpazz</Link>
+                <Link href="https://picpazz.com" target="_blank">Picpazz</Link>
               </h2>
             </CardContent>
           </Card>
@@ -71,10 +73,10 @@ export default function Home() {
             </CardHeader>
             <CardContent className="flex flex-col h-3/5 justify-center p-4 bg-cyan-100 bg-opacity-20">
               <h3 className="text-xl bg-violet-980">
-                Convery Information <br /> Conviniently With.
+                Convey Information <br /> Conviniently With.
               </h3>
               <h2 className="text-3xl">
-                <Link href="https://publicnotice.co.ke/">Public Notice</Link>
+                <Link href="https://publicnotice.co.ke/" target="_blank">Public Notice</Link>
               </h2>
             </CardContent>
           </Card>
@@ -96,7 +98,7 @@ export default function Home() {
                     Frontend <TrendingUp className="h-4 w-4" />
                   </div>
                   <div className="leading-none text-center leading-relaxed">
-                    React &bull; JavaScript &bull; Saas <br /> Bootstarp &bull; Material
+                    React &bull; JavaScript &bull; Sass <br /> Bootstarp &bull; Material
                   </div>
                 </div>
               </SkillChart>

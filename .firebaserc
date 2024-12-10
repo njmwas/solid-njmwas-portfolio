@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "fundi-bay"
+  },
+  "targets": {
+    "fundi-bay": {
+      "hosting": {
+        "njmwas-site": [
+          "njmwas"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
